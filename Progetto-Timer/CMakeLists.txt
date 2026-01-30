@@ -8,6 +8,9 @@ find_package(Qt6 COMPONENTS Widgets REQUIRED)
 
 add_executable(Progetto_Timer main.cpp
         AnalogClock.h
-        AnalogClock.h)
+        AnalogClock.h
+        Timer.cpp
+        Timer.h
+        Timer.h)
 
 target_link_libraries(Progetto_Timer Qt6::Widgets)

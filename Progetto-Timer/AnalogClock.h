@@ -39,10 +39,31 @@ protected:
         painter.setBrush(QColor(240, 240, 240));
         painter.drawEllipse(-100, -100, 200, 200);
 
+        //Linee (numeri)
+        /*
         painter.setPen(Qt::black);
         for (int i = 0; i < 12; ++i) {
             painter.drawLine(88, 0, 96, 0);
             painter.rotate(30.0);
+        }*/
+
+        //Numeri
+        painter.setPen(Qt::black);
+        QFont font = painter.font();
+        font.setBold(true);
+        font.setPointSize(10);
+        painter.setFont(font);
+
+        int r = 80;
+
+        for (int i = 1; i <= 12; ++i) {
+            double angle = (i * 30 - 90) * M_PI / 180.0;
+
+            int x = r * std::cos(angle);
+            int y = r * std::sin(angle);
+
+            QRect textRect(x - 10, y - 10, 20, 20);
+            painter.drawText(textRect, Qt::AlignCenter, QString::number(i));
         }
 
         // Lancetta ore
