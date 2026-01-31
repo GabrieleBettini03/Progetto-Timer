@@ -5,27 +5,31 @@
 #include <filesystem>
 #include "Timer.h"
 #include <string>
+#include <iostream>
 
 Timer::Timer() {
     seconds = 0;
-    status = "timerStop";
+    status = "idle";
 }
 
 void Timer::startTimer() {
-    status = "timerStart";
+    status = "counting";
 }
 
 void Timer::stopTimer() {
-    status = "timerStop";
+    status = "paused";
 }
 
 void Timer::resetTimer() {
-   status = "timerStop";
+   status = "idle";
 }
 
 void Timer::decreaseTimer() {
-    if (status == "timerStart") {
-        if (seconds >= 0) seconds--;
+    if (status == "counting") {
+        if (seconds > 0) {
+            seconds--;
+            std::cout << seconds << std::endl;
+        }
         else stopTimer();
     }
 }

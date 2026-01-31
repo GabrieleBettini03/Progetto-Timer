@@ -84,12 +84,22 @@ int main(int argc, char *argv[]) {
     labelSeparator_one.hide();
     labelSeparator_two.hide();
 
-    //Button per Iniziare/Stoppare, e Resettare il Timer
-    QPushButton timerStartPause("Start", &window);
+    //Label per il Timer
+    QLabel timerLabel ("00 : 00 : 00",&window);
+    timerLabel.setAlignment(Qt::AlignCenter);
+    timerLabel.setStyleSheet("font-size: 24px;");
+    timerLabel.setGeometry(0,50,300,50);
+    timerLabel.hide();
+
+    //Button per Iniziare, Stoppare, e Resettare il Timer
+    QPushButton timerStart("Start", &window);
+    QPushButton timerPauseResume("Pause", &window);
     QPushButton timerReset("Reset", &window);
-    timerStartPause.setGeometry(75, 320, 70, 50);
+    timerStart.setGeometry(75,250,150,50);
+    timerPauseResume.setGeometry(75, 320, 70, 50);
     timerReset.setGeometry(155, 320, 70, 50);
-    timerStartPause.hide();
+    timerStart.hide();
+    timerPauseResume.hide();
     timerReset.hide();
 
     //Aggiornamento tempo
@@ -99,6 +109,30 @@ int main(int argc, char *argv[]) {
         digitalTimeLabel.setText(time);
 
         analogClock.update();
+
+        //Aggiornamento e Display del Timer
+        if (timer.getStatus() == "counting") {
+            int hours = timer.getSeconds() / 3600;
+            int minutes = (timer.getSeconds()%3600)/60;
+            int seconds = (timer.getSeconds()%3600)%60;
+
+            std::string stringH;
+            std::string stringM;
+            std::string stringS;
+
+
+            if (hours < 10) stringH = "0" + std::to_string(hours);
+            else stringH = std::to_string(hours);
+
+            if (minutes < 10) stringM = "0" + std::to_string(minutes);
+            else stringM = std::to_string(minutes);
+
+            if (seconds < 10) stringS = "0" + std::to_string(seconds);
+            else stringS = std::to_string(seconds);
+
+            timerLabel.setText(QString::fromStdString(stringH + " : " + stringM + " : " + stringS));
+            timer.decreaseTimer();
+        }
     });
 
     //Segnale button AM/PM
@@ -130,7 +164,8 @@ int main(int argc, char *argv[]) {
         digitalTimeLabel.setVisible(!analogTime * !timerScreen);
         analogClock.setVisible(analogTime * !timerScreen);
 
-        timerStartPause.setVisible(timerScreen);
+        timerStart.setVisible(timerScreen);
+        timerPauseResume.setVisible(timerScreen);
         timerReset.setVisible(timerScreen);
 
         spinHours.setVisible(timerScreen);
@@ -139,17 +174,44 @@ int main(int argc, char *argv[]) {
         labelSeparator_one.setVisible(timerScreen);
         labelSeparator_two.setVisible(timerScreen);
 
+        timerLabel.setVisible(timerScreen);
+
         QString buttonTextTimer = timerScreen ? "Orologio" : "Timer";
         buttonT.setText(buttonTextTimer);
     });
 
-    //Segnale button Timer Start
-    /*QObject::connect(&timerStartPause, &QPushButton::clicked, [&]() {
+    //Segnale Button Timer Start
+    QObject::connect(&timerStart, &QPushButton::clicked, [&]() {
         std::string timerStatus = timer.getStatus();
-        if (timerStatus == "timerStop") {
-
+        if (timerStatus == "idle" or timerStatus == "paused") {
+            int timerTotal = spinHours.value() * 3600 + spinMinutes.value() * 60 + spinSeconds.value();
+            timer.setSeconds(timerTotal);
+            timer.startTimer();
+            timerPauseResume.setText("Pause");
         }
-    });*/
+    });
+
+    //Segnale Button Timer Pause/Resume
+    QObject::connect(&timerPauseResume, &QPushButton::clicked, [&]() {
+        std::string timerStatus = timer.getStatus();
+        if (timerStatus == "counting") {
+            timerPauseResume.setText("Resume");
+            timer.stopTimer();
+        }
+        else if (timerStatus == "paused") {
+            timerPauseResume.setText("Pause");
+            timer.startTimer();
+        }
+    });
+
+    //Segnale Button Timer Reset
+    QObject::connect(&timerReset, &QPushButton::clicked, [&]() {
+        std::string timerStatus = timer.getStatus();
+        if (timerStatus == "paused") {
+            timer.setSeconds(0);
+            timerLabel.setText("00 : 00 : 00");
+        }
+    });
 
     time.start(1000);
 
