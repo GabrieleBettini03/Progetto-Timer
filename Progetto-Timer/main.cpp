@@ -8,6 +8,7 @@
 #include <QPainter>
 #include <QTime>
 #include <QSpinBox>
+#include <QMessageBox>
 
 #include "AnalogClock.h"
 #include "Timer.h"
@@ -133,6 +134,12 @@ int main(int argc, char *argv[]) {
             timerLabel.setText(QString::fromStdString(stringH + " : " + stringM + " : " + stringS));
             timer.decreaseTimer();
         }
+        else {
+            if (timer.getStatus() == "idle" && timer.getTimerFinished()) {
+                QMessageBox::warning(&window, "Timer", "Timer Over");
+                timer.setTimerFinished(false);
+            }
+        }
     });
 
     //Segnale button AM/PM
@@ -207,9 +214,13 @@ int main(int argc, char *argv[]) {
     //Segnale Button Timer Reset
     QObject::connect(&timerReset, &QPushButton::clicked, [&]() {
         std::string timerStatus = timer.getStatus();
-        if (timerStatus == "paused") {
-            timer.setSeconds(0);
+        if (timerStatus != "counting") {
             timerLabel.setText("00 : 00 : 00");
+            timer.resetTimer();
+            timerPauseResume.setText("Pause");
+            spinHours.setValue(0);
+            spinMinutes.setValue(0);
+            spinSeconds.setValue(0);
         }
     });
 

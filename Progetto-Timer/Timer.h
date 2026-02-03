@@ -16,6 +16,8 @@ public:
     void resetTimer();
     void decreaseTimer();
 
+
+    //getters & setters
     std::string getStatus() {
         return status;
     };
@@ -28,9 +30,18 @@ public:
         seconds = s;
     }
 
+    bool getTimerFinished() {
+        return timerFinished;
+    }
+
+    void setTimerFinished(bool tf) {
+        timerFinished = tf;
+    }
+
 private:
     int seconds;
     std::string status;
+    bool timerFinished;
 };
 
 

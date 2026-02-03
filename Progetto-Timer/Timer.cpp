@@ -10,6 +10,7 @@
 Timer::Timer() {
     seconds = 0;
     status = "idle";
+    timerFinished = false;
 }
 
 void Timer::startTimer() {
@@ -22,6 +23,7 @@ void Timer::stopTimer() {
 
 void Timer::resetTimer() {
    status = "idle";
+   seconds = 0;
 }
 
 void Timer::decreaseTimer() {
@@ -30,6 +32,9 @@ void Timer::decreaseTimer() {
             seconds--;
             std::cout << seconds << std::endl;
         }
-        else stopTimer();
+        else {
+            status = "idle";
+            timerFinished = true;
+        }
     }
 }
