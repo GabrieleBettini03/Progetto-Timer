@@ -9,6 +9,8 @@
 #include <QTime>
 #include <QSpinBox>
 #include <QMessageBox>
+#include <QDate>
+#include <QCalendarWidget>
 
 #include "AnalogClock.h"
 #include "Timer.h"
@@ -20,6 +22,10 @@ int main(int argc, char *argv[]) {
     //Finestra
     window.resize(300, 600);
     window.setWindowTitle("Timer");
+
+    //----------------------------------------------------------------------------------------------------------------//
+    //--------------------------------------------------- WIDGETS ----------------------------------------------------//
+    //----------------------------------------------------------------------------------------------------------------//
 
     //Label per orologio digitale
     QLabel digitalTimeLabel(&window);
@@ -103,6 +109,28 @@ int main(int argc, char *argv[]) {
     timerPauseResume.hide();
     timerReset.hide();
 
+    //Button per passare alla modalità "Date"
+    QPushButton buttonDate("Date", &window);
+    buttonDate.setGeometry(75,460,150,50);
+    bool dateScreen = false;
+
+    QDate date = QDate::currentDate();
+    QString dateString = date.toString("dd/MM/yyyy");
+
+    QLabel labelDate(&window);
+    labelDate.setAlignment(Qt::AlignCenter);
+    labelDate.setGeometry(0,50,300,50);
+    labelDate.setStyleSheet("font-size: 24px;");
+    labelDate.hide();
+
+    //Widget per il calendario
+    QCalendarWidget calendar(&window);
+    calendar.setGeometry(10,120,280,300);
+    calendar.hide();
+
+    //----------------------------------------------------------------------------------------------------------------//
+    //------------------------------------------------- CONNESSIONI --------------------------------------------------//
+    //----------------------------------------------------------------------------------------------------------------//
     //Aggiornamento tempo
     QObject::connect(&time, &QTimer::timeout, [&]() {
         QString format = AMPM? "hh:mm:ss AP":"HH:mm:ss";
@@ -167,6 +195,7 @@ int main(int argc, char *argv[]) {
 
         buttonAMPM.setVisible(!timerScreen);
         buttonAD.setVisible(!timerScreen);
+        buttonDate.setVisible(!timerScreen);
 
         digitalTimeLabel.setVisible(!analogTime * !timerScreen);
         analogClock.setVisible(analogTime * !timerScreen);
@@ -222,6 +251,25 @@ int main(int argc, char *argv[]) {
             spinMinutes.setValue(0);
             spinSeconds.setValue(0);
         }
+    });
+
+    //Segnale Button Date
+    QObject::connect(&buttonDate, &QPushButton::clicked, [&]() {
+        dateScreen = !dateScreen;
+
+        buttonAMPM.setVisible(!dateScreen);
+        buttonAD.setVisible(!dateScreen);
+
+        digitalTimeLabel.setVisible(!analogTime * !dateScreen);
+        analogClock.setVisible(analogTime * !dateScreen);
+        buttonT.setVisible(!dateScreen);
+
+        labelDate.setVisible(dateScreen);
+        calendar.setVisible(dateScreen);
+        QString buttonTextDate = dateScreen ? "Orario" : "Data";
+        buttonDate.setText(buttonTextDate);
+
+        labelDate.setText(dateString);
     });
 
     time.start(1000);
