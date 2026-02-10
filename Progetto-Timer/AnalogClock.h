@@ -39,14 +39,6 @@ protected:
         painter.setBrush(QColor(240, 240, 240));
         painter.drawEllipse(-100, -100, 200, 200);
 
-        //Linee (numeri)
-        /*
-        painter.setPen(Qt::black);
-        for (int i = 0; i < 12; ++i) {
-            painter.drawLine(88, 0, 96, 0);
-            painter.rotate(30.0);
-        }*/
-
         //Numeri
         painter.setPen(Qt::black);
         QFont font = painter.font();
