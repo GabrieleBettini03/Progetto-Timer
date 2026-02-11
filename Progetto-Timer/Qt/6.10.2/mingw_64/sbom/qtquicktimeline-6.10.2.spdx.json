@@ -1,0 +1,822 @@
+{
+    "SPDXID": "SPDXRef-DOCUMENT",
+    "creationInfo": {
+        "created": "2026-01-22T19:50:50Z",
+        "creators": [
+            "Organization: TheQtCompany",
+            "Tool: Qt Build System"
+        ],
+        "comment": "This SPDX document was created from CMake 3.30.5, using the qt\nbuild system from https://code.qt.io/cgit/qt/qtbase.git/tree/cmake/QtPublicSbomHelpers.cmake"
+    },
+    "dataLicense": "CC0-1.0",
+    "externalDocumentRefs": [
+        {
+            "externalDocumentId": "DocumentRef-qtdeclarative",
+            "spdxDocument": "https://qt.io/spdxdocs/qtdeclarative-09c70541+HEAD-host-windows-amd64-target-windows-mingw-amd64-c6b996c1-0520-58c8-b63d-8d87b11a5578",
+            "checksum": {
+                "algorithm": "SHA1",
+                "checksumValue": "a1cfd7326467f385c277084fad703e52dbb4ffde"
+            }
+        },
+        {
+            "externalDocumentId": "DocumentRef-qtbase",
+            "spdxDocument": "https://qt.io/spdxdocs/qtbase-000d6c62+HEAD-host-windows-amd64-target-windows-mingw-amd64-fa76ae82-e179-5518-9529-aa866b6407b2",
+            "checksum": {
+                "algorithm": "SHA1",
+                "checksumValue": "f6f067990e81c7db6f5ae39f9e5bddbc3cfd440f"
+            }
+        }
+    ],
+    "hasExtractedLicensingInfos": [
+        {
+            "extractedText": "Licensees holding valid commercial Qt licenses may use this software in\naccordance with the the terms contained in a written agreement between\nyou and The Qt Company. Alternatively, the terms and conditions that were\naccepted by the licensee when buying and/or downloading the\nsoftware do apply.\n\nFor the latest licensing terms and conditions, see https://www.qt.io/terms-conditions.\nFor further information use the contact form at https://www.qt.io/contact-us.\n",
+            "licenseId": "LicenseRef-Qt-Commercial"
+        }
+    ],
+    "name": "qtquicktimeline-6.10.2",
+    "spdxVersion": "SPDX-2.3",
+    "documentNamespace": "https://qt.io/spdxdocs/qtquicktimeline-6.10.2-host-windows-amd64-target-windows-mingw-amd64-893347b4-9e71-5793-bcd4-6af63d11d54c",
+    "packages": [
+        {
+            "SPDXID": "SPDXRef-compiler",
+            "copyrightText": "NOASSERTION",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "licenseConcluded": "NOASSERTION",
+            "licenseDeclared": "NOASSERTION",
+            "name": "GNU",
+            "primaryPackagePurpose": "APPLICATION",
+            "summary": "The compiler as identified by CMake, running on Windows (AMD64)",
+            "supplier": "Organization: Anonymous",
+            "versionInfo": "13.1.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-qtquicktimeline",
+            "builtDate": "2026-01-22T19:50:50Z",
+            "comment": "Built by CMake 3.30.5 with RelWithDebInfo configuration for Windows (AMD64)\nqtquicktimeline was configured with:\n    qt-configure-module <sources>/qtquicktimeline -- -DFFMPEG_DIR=C:\\FFmpeg-n7.1.2\\build\\mingw\\installed -DQT_DEPLOY_FFMPEG=TRUE -DCMAKE_IGNORE_PREFIX_PATH=C:/strawberry/c -DQT_INSTALL_CONFIG_INFO_FILES=ON -DQT_GENERATE_SBOM=ON -DQT_GENERATE_SOURCE_SBOM=ON -DQT_SBOM_REQUIRE_GENERATE_CYDX_V1_6=ON -DQT_SBOM_VERIFY_CYDX_V1_6=ON -DQT_SBOM_PYTHON_INTERP=C:\\Python38_64 -DQT_SBOM_PYTHON_APPS_PATH=C:\\Python310_64\\Scripts -DQT_LINT_SOURCE_SBOM=ON -DQT_INTERNAL_SBOM_DEFAULT_CHECKS=ON -DQT_INTERNAL_SBOM_AUDIT=ON -DQT_INTERNAL_SBOM_AUDIT_NO_ERROR=ON -DQT_BUILD_TESTS=OFF -DCMAKE_AUTOGEN_VERBOSE=ON -DCMAKE_MESSAGE_LOG_LEVEL=STATUS -DCMAKE_C_COMPILER_LAUNCHER=sccache -DCMAKE_CXX_COMPILER_LAUNCHER=sccache\n",
+            "copyrightText": "Copyright (C) The Qt Company Ltd. and other contributors.",
+            "downloadLocation": "git://code.qt.io/qt/qtquicktimeline.git",
+            "externalRefs": [
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:2.3:a:qt:qtquicktimeline:6.10.2:*:*:*:*:*:*:*",
+                    "referenceType": "cpe23Type"
+                },
+                {
+                    "referenceCategory": "PACKAGE_MANAGER",
+                    "referenceLocator": "pkg:generic/TheQtCompany/qtquicktimeline@6.10.2",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "homepage": "https://qt.io",
+            "licenseConcluded": "NOASSERTION",
+            "licenseDeclared": "NOASSERTION",
+            "name": "qtquicktimeline",
+            "supplier": "Organization: TheQtCompany",
+            "versionInfo": "6.10.2"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimelineBlendTrees",
+            "comment": "\nCMake target name: QuickTimelineBlendTrees\nCMake exported target name: Qt6::QuickTimelineBlendTrees\nContained in CMake package: Qt6QuickTimelineBlendTrees\n",
+            "copyrightText": "Copyright (C) The Qt Company Ltd. and other contributors.",
+            "downloadLocation": "git://code.qt.io/qt/qtquicktimeline.git",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE_MANAGER",
+                    "referenceLocator": "pkg:github/qt/qtquicktimeline?library_name=QuickTimelineBlendTrees#src/timeline/blendtrees",
+                    "referenceType": "purl"
+                },
+                {
+                    "referenceCategory": "PACKAGE_MANAGER",
+                    "referenceLocator": "pkg:generic/TheQtCompany/qtquicktimeline-QuickTimelineBlendTrees?vcs_url=https://code.qt.io/qt/qtquicktimeline.git&library_name=QuickTimelineBlendTrees#src/timeline/blendtrees",
+                    "referenceType": "purl"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:2.3:a:qt:qt:6.10.2:*:*:*:*:*:*:*",
+                    "referenceType": "cpe23Type"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:2.3:a:qt:qtquicktimeline:6.10.2:*:*:*:*:*:*:*",
+                    "referenceType": "cpe23Type"
+                }
+            ],
+            "filesAnalyzed": true,
+            "licenseConcluded": "LicenseRef-Qt-Commercial OR GPL-3.0-only",
+            "licenseDeclared": "LicenseRef-Qt-Commercial OR GPL-3.0-only",
+            "name": "QuickTimelineBlendTrees",
+            "packageVerificationCode": {
+                "packageVerificationCodeValue": "a5e4b0e36942fecf9351db278acbcf9d23f91c25"
+            },
+            "primaryPackagePurpose": "LIBRARY",
+            "supplier": "Organization: TheQtCompany",
+            "versionInfo": "6.10.2"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-qtquicktimeline-qt-plugin-qtquicktimelineblendtreesplugin",
+            "comment": "\nCMake target name: qtquicktimelineblendtreesplugin\n",
+            "copyrightText": "Copyright (C) The Qt Company Ltd. and other contributors.",
+            "downloadLocation": "git://code.qt.io/qt/qtquicktimeline.git",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE_MANAGER",
+                    "referenceLocator": "pkg:github/qt/qtquicktimeline?library_name=qtquicktimelineblendtreesplugin#src/timeline/blendtrees",
+                    "referenceType": "purl"
+                },
+                {
+                    "referenceCategory": "PACKAGE_MANAGER",
+                    "referenceLocator": "pkg:generic/TheQtCompany/qtquicktimeline-qtquicktimelineblendtreesplugin?vcs_url=https://code.qt.io/qt/qtquicktimeline.git&library_name=qtquicktimelineblendtreesplugin#src/timeline/blendtrees",
+                    "referenceType": "purl"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:2.3:a:qt:qt:6.10.2:*:*:*:*:*:*:*",
+                    "referenceType": "cpe23Type"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:2.3:a:qt:qtquicktimeline:6.10.2:*:*:*:*:*:*:*",
+                    "referenceType": "cpe23Type"
+                }
+            ],
+            "filesAnalyzed": true,
+            "licenseConcluded": "LicenseRef-Qt-Commercial OR GPL-3.0-only",
+            "licenseDeclared": "LicenseRef-Qt-Commercial OR GPL-3.0-only",
+            "name": "qtquicktimelineblendtreesplugin",
+            "packageVerificationCode": {
+                "packageVerificationCodeValue": "39a24f61e549b5c2c82b492f626961a88b98e42f"
+            },
+            "primaryPackagePurpose": "LIBRARY",
+            "supplier": "Organization: TheQtCompany",
+            "versionInfo": "6.10.2"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimeline",
+            "comment": "\nCMake target name: QuickTimeline\nCMake exported target name: Qt6::QuickTimeline\nContained in CMake package: Qt6QuickTimeline\n",
+            "copyrightText": "Copyright (C) The Qt Company Ltd. and other contributors.",
+            "downloadLocation": "git://code.qt.io/qt/qtquicktimeline.git",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE_MANAGER",
+                    "referenceLocator": "pkg:github/qt/qtquicktimeline?library_name=QuickTimeline#src/timeline",
+                    "referenceType": "purl"
+                },
+                {
+                    "referenceCategory": "PACKAGE_MANAGER",
+                    "referenceLocator": "pkg:generic/TheQtCompany/qtquicktimeline-QuickTimeline?vcs_url=https://code.qt.io/qt/qtquicktimeline.git&library_name=QuickTimeline#src/timeline",
+                    "referenceType": "purl"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:2.3:a:qt:qt:6.10.2:*:*:*:*:*:*:*",
+                    "referenceType": "cpe23Type"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:2.3:a:qt:qtquicktimeline:6.10.2:*:*:*:*:*:*:*",
+                    "referenceType": "cpe23Type"
+                }
+            ],
+            "filesAnalyzed": true,
+            "licenseConcluded": "LicenseRef-Qt-Commercial OR GPL-3.0-only",
+            "licenseDeclared": "LicenseRef-Qt-Commercial OR GPL-3.0-only",
+            "name": "QuickTimeline",
+            "packageVerificationCode": {
+                "packageVerificationCodeValue": "c1944921d59adebb3d9a1f4a20607d2a1e69a545"
+            },
+            "primaryPackagePurpose": "LIBRARY",
+            "supplier": "Organization: TheQtCompany",
+            "versionInfo": "6.10.2"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-qtquicktimeline-qt-plugin-qtquicktimelineplugin",
+            "comment": "\nCMake target name: qtquicktimelineplugin\n",
+            "copyrightText": "Copyright (C) The Qt Company Ltd. and other contributors.",
+            "downloadLocation": "git://code.qt.io/qt/qtquicktimeline.git",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE_MANAGER",
+                    "referenceLocator": "pkg:github/qt/qtquicktimeline?library_name=qtquicktimelineplugin#src/timeline",
+                    "referenceType": "purl"
+                },
+                {
+                    "referenceCategory": "PACKAGE_MANAGER",
+                    "referenceLocator": "pkg:generic/TheQtCompany/qtquicktimeline-qtquicktimelineplugin?vcs_url=https://code.qt.io/qt/qtquicktimeline.git&library_name=qtquicktimelineplugin#src/timeline",
+                    "referenceType": "purl"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:2.3:a:qt:qt:6.10.2:*:*:*:*:*:*:*",
+                    "referenceType": "cpe23Type"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:2.3:a:qt:qtquicktimeline:6.10.2:*:*:*:*:*:*:*",
+                    "referenceType": "cpe23Type"
+                }
+            ],
+            "filesAnalyzed": true,
+            "licenseConcluded": "LicenseRef-Qt-Commercial OR GPL-3.0-only",
+            "licenseDeclared": "LicenseRef-Qt-Commercial OR GPL-3.0-only",
+            "name": "qtquicktimelineplugin",
+            "packageVerificationCode": {
+                "packageVerificationCodeValue": "02c779ec791a1fc8ca489c01826db0d24d5ed79a"
+            },
+            "primaryPackagePurpose": "LIBRARY",
+            "supplier": "Organization: TheQtCompany",
+            "versionInfo": "6.10.2"
+        }
+    ],
+    "files": [
+        {
+            "SPDXID": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "81fdbdb294a373a677ac959b723e5113ae17d1cf"
+                }
+            ],
+            "copyrightText": "Copyright (C) The Qt Company Ltd. and other contributors.",
+            "fileName": "./bin/Qt6QuickTimelineBlendTrees.dll",
+            "fileTypes": [
+                "BINARY"
+            ],
+            "licenseConcluded": "LicenseRef-Qt-Commercial OR GPL-3.0-only",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees-ImportLibrary",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "83bc2af5999fc559c4e5e6bd7b760d1d0d46821a"
+                }
+            ],
+            "copyrightText": "Copyright (C) The Qt Company Ltd. and other contributors.",
+            "fileName": "./lib/libQt6QuickTimelineBlendTrees.a",
+            "fileTypes": [
+                "BINARY"
+            ],
+            "licenseConcluded": "LicenseRef-Qt-Commercial OR GPL-3.0-only",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-PackagedFile-qt-plugin-qtquicktimelineblendtreesplugin",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "7686acc55ac1b8f52d789d502d224111d11888db"
+                }
+            ],
+            "copyrightText": "Copyright (C) The Qt Company Ltd. and other contributors.",
+            "fileName": "./qml/QtQuick/Timeline/BlendTrees/qtquicktimelineblendtreesplugin.dll",
+            "fileTypes": [
+                "BINARY"
+            ],
+            "licenseConcluded": "LicenseRef-Qt-Commercial OR GPL-3.0-only",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-PackagedFile-qt-module-QuickTimeline",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "4852f9a3fe7a70770843a8ffe78ccb104f468c67"
+                }
+            ],
+            "copyrightText": "Copyright (C) The Qt Company Ltd. and other contributors.",
+            "fileName": "./bin/Qt6QuickTimeline.dll",
+            "fileTypes": [
+                "BINARY"
+            ],
+            "licenseConcluded": "LicenseRef-Qt-Commercial OR GPL-3.0-only",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-PackagedFile-qt-module-QuickTimeline-ImportLibrary",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "505892d8452fbdf7f64187fad9348e04701325bc"
+                }
+            ],
+            "copyrightText": "Copyright (C) The Qt Company Ltd. and other contributors.",
+            "fileName": "./lib/libQt6QuickTimeline.a",
+            "fileTypes": [
+                "BINARY"
+            ],
+            "licenseConcluded": "LicenseRef-Qt-Commercial OR GPL-3.0-only",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-PackagedFile-qt-plugin-qtquicktimelineplugin",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0260bb2b852094c89923ce8143f49d7d448e1931"
+                }
+            ],
+            "copyrightText": "Copyright (C) The Qt Company Ltd. and other contributors.",
+            "fileName": "./qml/QtQuick/Timeline/qtquicktimelineplugin.dll",
+            "fileTypes": [
+                "BINARY"
+            ],
+            "licenseConcluded": "LicenseRef-Qt-Commercial OR GPL-3.0-only",
+            "licenseInfoInFiles": [
+                "NOASSERTION"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "spdxElementId": "SPDXRef-compiler",
+            "comment": "SPDXRef-Package-qtquicktimeline is built by compiler GNU version 13.1.0",
+            "relatedSpdxElement": "SPDXRef-Package-qtquicktimeline",
+            "relationshipType": "BUILD_DEPENDENCY_OF"
+        },
+        {
+            "spdxElementId": "SPDXRef-DOCUMENT",
+            "relatedSpdxElement": "SPDXRef-Package-qtquicktimeline",
+            "relationshipType": "DESCRIBES"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimelineBlendTrees",
+            "relatedSpdxElement": "DocumentRef-qtdeclarative:SPDXRef-Package-qtdeclarative-qt-module-Quick",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimelineBlendTrees",
+            "relatedSpdxElement": "DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformModuleInternal",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimelineBlendTrees",
+            "relatedSpdxElement": "DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Core",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimelineBlendTrees",
+            "relatedSpdxElement": "DocumentRef-qtdeclarative:SPDXRef-Package-qtdeclarative-qt-module-Qml",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimelineBlendTrees",
+            "relatedSpdxElement": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimeline",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline",
+            "relatedSpdxElement": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimelineBlendTrees",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimelineBlendTrees",
+            "relatedSpdxElement": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimelineBlendTrees",
+            "relatedSpdxElement": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/blendtrees/C:/Users/qt/work/qt/qtquicktimeline_build/src/timeline/blendtrees/QuickTimelineBlendTrees_resource.rc",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees",
+            "comment": "/build_dir/qtquicktimeline/include/QtQuickTimelineBlendTrees/qtquicktimelineblendtreesexports.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/blendtrees/qblendtreenode.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/blendtrees/qblendtreenode_p.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/blendtrees/qtimelineanimationnode.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/blendtrees/qtimelineanimationnode_p.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/blendtrees/qblendanimationnode.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/blendtrees/qblendanimationnode_p.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/blendtrees/qtquicktimelineblendtreesglobal.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/blendtrees/qtquicktimelineblendtreesglobal_p.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees",
+            "comment": "/build_dir/qtquicktimeline/src/timeline/blendtrees/quicktimelineblendtrees_qmltyperegistrations.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees",
+            "comment": "/build_dir/qtquicktimeline/src/timeline/blendtrees/.qt/rcc/qrc_qmake_QtQuick_Timeline_BlendTrees.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimelineBlendTrees",
+            "relatedSpdxElement": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees-ImportLibrary",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimelineBlendTrees",
+            "relatedSpdxElement": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees-ImportLibrary",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees-ImportLibrary",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/blendtrees/C:/Users/qt/work/qt/qtquicktimeline_build/src/timeline/blendtrees/QuickTimelineBlendTrees_resource.rc",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees-ImportLibrary",
+            "comment": "/build_dir/qtquicktimeline/include/QtQuickTimelineBlendTrees/qtquicktimelineblendtreesexports.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees-ImportLibrary",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/blendtrees/qblendtreenode.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees-ImportLibrary",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/blendtrees/qblendtreenode_p.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees-ImportLibrary",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/blendtrees/qtimelineanimationnode.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees-ImportLibrary",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/blendtrees/qtimelineanimationnode_p.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees-ImportLibrary",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/blendtrees/qblendanimationnode.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees-ImportLibrary",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/blendtrees/qblendanimationnode_p.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees-ImportLibrary",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/blendtrees/qtquicktimelineblendtreesglobal.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees-ImportLibrary",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/blendtrees/qtquicktimelineblendtreesglobal_p.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees-ImportLibrary",
+            "comment": "/build_dir/qtquicktimeline/src/timeline/blendtrees/quicktimelineblendtrees_qmltyperegistrations.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimelineBlendTrees-ImportLibrary",
+            "comment": "/build_dir/qtquicktimeline/src/timeline/blendtrees/.qt/rcc/qrc_qmake_QtQuick_Timeline_BlendTrees.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-plugin-qtquicktimelineblendtreesplugin",
+            "relatedSpdxElement": "DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformPluginInternal",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-plugin-qtquicktimelineblendtreesplugin",
+            "relatedSpdxElement": "DocumentRef-qtdeclarative:SPDXRef-Package-qtdeclarative-qt-module-Qml",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-plugin-qtquicktimelineblendtreesplugin",
+            "relatedSpdxElement": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimelineBlendTrees",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline",
+            "relatedSpdxElement": "SPDXRef-Package-qtquicktimeline-qt-plugin-qtquicktimelineblendtreesplugin",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-plugin-qtquicktimelineblendtreesplugin",
+            "relatedSpdxElement": "SPDXRef-PackagedFile-qt-plugin-qtquicktimelineblendtreesplugin",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-plugin-qtquicktimelineblendtreesplugin",
+            "relatedSpdxElement": "SPDXRef-PackagedFile-qt-plugin-qtquicktimelineblendtreesplugin",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-plugin-qtquicktimelineblendtreesplugin",
+            "comment": "/build_dir/qtquicktimeline/src/timeline/blendtrees/qtquicktimelineblendtreesplugin_QtQuickTimelineBlendTreesPlugin.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimeline",
+            "relatedSpdxElement": "DocumentRef-qtdeclarative:SPDXRef-Package-qtdeclarative-qt-module-Quick",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimeline",
+            "relatedSpdxElement": "DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformModuleInternal",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimeline",
+            "relatedSpdxElement": "DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Core",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimeline",
+            "relatedSpdxElement": "DocumentRef-qtdeclarative:SPDXRef-Package-qtdeclarative-qt-module-Qml",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline",
+            "relatedSpdxElement": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimeline",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimeline",
+            "relatedSpdxElement": "SPDXRef-PackagedFile-qt-module-QuickTimeline",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimeline",
+            "relatedSpdxElement": "SPDXRef-PackagedFile-qt-module-QuickTimeline",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/C:/Users/qt/work/qt/qtquicktimeline_build/src/timeline/QuickTimeline_resource.rc",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline",
+            "comment": "/build_dir/qtquicktimeline/include/QtQuickTimeline/qtquicktimelineexports.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/qquickkeyframedatautils_p.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/qquickkeyframe.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/qquickkeyframe_p.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/qquicktimeline.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/qquicktimeline_p.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/qquicktimelineanimation.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/qquicktimelineanimation_p.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/qtquicktimelineglobal.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/qtquicktimelineglobal_p.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline",
+            "comment": "/build_dir/qtquicktimeline/src/timeline/quicktimeline_qmltyperegistrations.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline",
+            "comment": "/build_dir/qtquicktimeline/src/timeline/.qt/rcc/qrc_qmake_QtQuick_Timeline.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimeline",
+            "relatedSpdxElement": "SPDXRef-PackagedFile-qt-module-QuickTimeline-ImportLibrary",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimeline",
+            "relatedSpdxElement": "SPDXRef-PackagedFile-qt-module-QuickTimeline-ImportLibrary",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline-ImportLibrary",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/C:/Users/qt/work/qt/qtquicktimeline_build/src/timeline/QuickTimeline_resource.rc",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline-ImportLibrary",
+            "comment": "/build_dir/qtquicktimeline/include/QtQuickTimeline/qtquicktimelineexports.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline-ImportLibrary",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/qquickkeyframedatautils_p.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline-ImportLibrary",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/qquickkeyframe.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline-ImportLibrary",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/qquickkeyframe_p.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline-ImportLibrary",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/qquicktimeline.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline-ImportLibrary",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/qquicktimeline_p.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline-ImportLibrary",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/qquicktimelineanimation.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline-ImportLibrary",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/qquicktimelineanimation_p.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline-ImportLibrary",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/qtquicktimelineglobal.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline-ImportLibrary",
+            "comment": "/src_dir/qtquicktimeline/src/timeline/qtquicktimelineglobal_p.h",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline-ImportLibrary",
+            "comment": "/build_dir/qtquicktimeline/src/timeline/quicktimeline_qmltyperegistrations.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-module-QuickTimeline-ImportLibrary",
+            "comment": "/build_dir/qtquicktimeline/src/timeline/.qt/rcc/qrc_qmake_QtQuick_Timeline.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-plugin-qtquicktimelineplugin",
+            "relatedSpdxElement": "DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformPluginInternal",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-plugin-qtquicktimelineplugin",
+            "relatedSpdxElement": "DocumentRef-qtdeclarative:SPDXRef-Package-qtdeclarative-qt-module-Qml",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-plugin-qtquicktimelineplugin",
+            "relatedSpdxElement": "SPDXRef-Package-qtquicktimeline-qt-module-QuickTimeline",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline",
+            "relatedSpdxElement": "SPDXRef-Package-qtquicktimeline-qt-plugin-qtquicktimelineplugin",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-plugin-qtquicktimelineplugin",
+            "relatedSpdxElement": "SPDXRef-PackagedFile-qt-plugin-qtquicktimelineplugin",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-Package-qtquicktimeline-qt-plugin-qtquicktimelineplugin",
+            "relatedSpdxElement": "SPDXRef-PackagedFile-qt-plugin-qtquicktimelineplugin",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-PackagedFile-qt-plugin-qtquicktimelineplugin",
+            "comment": "/build_dir/qtquicktimeline/src/timeline/qtquicktimelineplugin_QtQuickTimelinePlugin.cpp",
+            "relatedSpdxElement": "NOASSERTION",
+            "relationshipType": "GENERATED_FROM"
+        }
+    ]
+}
