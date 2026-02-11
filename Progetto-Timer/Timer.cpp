@@ -30,7 +30,7 @@ void Timer::decreaseTimer() {
     if (status == "counting") {
         if (seconds > 0) {
             seconds--;
-            std::cout << seconds << std::endl;
+            //std::cout << seconds << std::endl;
         }
         else {
             status = "idle";
